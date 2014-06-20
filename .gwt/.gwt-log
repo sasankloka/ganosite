@@ -1,0 +1,218 @@
+Public resources found in...
+   Unexpected entry in classpath; /Users/Loka/Documents/workspace/Website/target/generated-sources/gwt is neither a directory nor an archive (.jar or .zip)
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2798 units from cache.
+Compiling...
+   0% complete (ETR: 52 seconds)
+   10% complete (ETR: 48 seconds)
+   20% complete (ETR: 45 seconds)
+   30% complete (ETR: 34 seconds)
+   40% complete (ETR: 30 seconds)
+   50% complete (ETR: 24 seconds)
+   60% complete (ETR: 19 seconds)
+   70% complete (ETR: 14 seconds)
+   80% complete (ETR: 9 seconds)
+   90% complete (ETR: 5 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 67.30 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage.LayoutPageUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.22 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402860699609.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402860699609.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402860699609_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.shared.Resource
+   Invoking generator com.google.gwt.resources.rebind.context.InlineClientBundleGenerator
+      Preparing method bg
+         Adding image 'com.ppp.prm.portal.shared.Resource.bg'
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.SiteClientBundle
+   Invoking generator com.google.gwt.resources.rebind.context.InlineClientBundleGenerator
+      Preparing method bg
+         Adding image 'com.ppp.prm.portal.client.view.SiteClientBundle.bg'
+      Preparing method logo
+         Adding image 'com.ppp.prm.portal.client.view.SiteClientBundle.logo'
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.user.client.ui.MenuBar.Resources
+   Invoking generator com.google.gwt.resources.rebind.context.InlineClientBundleGenerator
+      Preparing method menuBarSubMenuIcon
+         Adding image 'com.google.gwt.user.client.ui.MenuBar.Resources.menuBarSubMenuIcon'
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage.LayoutPageUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.17 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402860704080.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402860704080.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402860704080_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Public resources found in...
+   Unexpected entry in classpath; /Users/Loka/Documents/workspace/Website/target/generated-sources/gwt is neither a directory nor an archive (.jar or .zip)
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2798 units from cache.
+Compiling...
+   20% complete (ETR: 15 seconds)
+   20% complete (ETR: 15 seconds)
+   20% complete (ETR: 15 seconds)
+   30% complete (ETR: 14 seconds)
+   40% complete (ETR: 10 seconds)
+   50% complete (ETR: 8 seconds)
+   60% complete (ETR: 7 seconds)
+   70% complete (ETR: 5 seconds)
+   80% complete (ETR: 3 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 29.71 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.05 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage.LayoutPageUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.16 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402975261942.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402975261942.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402975261942_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.shared.Resource
+   Invoking generator com.google.gwt.resources.rebind.context.InlineClientBundleGenerator
+      Preparing method bg
+         Adding image 'com.ppp.prm.portal.shared.Resource.bg'
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.SiteClientBundle
+   Invoking generator com.google.gwt.resources.rebind.context.InlineClientBundleGenerator
+      Preparing method bg
+         Adding image 'com.ppp.prm.portal.client.view.SiteClientBundle.bg'
+      Preparing method logo
+         Adding image 'com.ppp.prm.portal.client.view.SiteClientBundle.logo'
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.user.client.ui.MenuBar.Resources
+   Invoking generator com.google.gwt.resources.rebind.context.InlineClientBundleGenerator
+      Preparing method menuBarSubMenuIcon
+         Adding image 'com.google.gwt.user.client.ui.MenuBar.Resources.menuBarSubMenuIcon'
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage.LayoutPageUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.04 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402975266391.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402975266391.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.ppp.prm.portal.client.view.LayoutPage_LayoutPageUiBinderImpl_designTime1402975266391_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units

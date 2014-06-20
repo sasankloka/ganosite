@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+	 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+	 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+<context:component-scan base-package="com.ppp.prm.portal.server"/>
+
+ 	 <!-- configuration Hibernate -->
+
+
+<!-- <bean id="rainForestCommentService" class="com.ppp.prm.portal.server.service.RainCommentsServiceImpl">
+	    <property name="commentsDAO" ref="raincommentsDAO"/>
+	</bean> -->
+
+<bean id="PushBeanService" class="com.ppp.prm.portal.server.service.PushBeanServiceImpl">
+	    <property name="newsDao" ref="newsDaoRef"/>
+	    <property name="db4oDao" ref="db4oDaoRef"/>
+	</bean>
+	
+<!--  <bean id="newsDaoRef" class="com.ppp.prm.portal.server.dao.hibernate.NewsDaoImpl">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>	  -->
+
+<!--  DB4o Test Commented out -->
+ <bean id="newsDaoRef" class="com.ppp.prm.portal.server.dao.DB4oNewsDaoImpl" parent="db4oTemplate">
+</bean>	
+<bean id="db4oDaoRef" class="com.ppp.prm.portal.server.dao.DB4oDaoImpl" parent="db4oTemplate">
+</bean>	
+
+<!-- BLOC C : Business -->
+	<!-- business services declaration -->
+	
+<!--     <bean id="commentsService" class="com.ppp.prm.portal.server.service.CommentsServiceImpl" /> -->
+     
+     <bean id="pushBeanService"     class ="com.ppp.prm.portal.server.service.PushBeanServiceImpl"/>
+     
+
+
+<bean id="db4oTemplate" abstract="true">
+		<property name="objectContainer" ref="container"/>
+	</bean>
+ 
+ <!-- Application context definition for Recipe Manager on Db4o
+-->
+
+<bean id="container" class="org.springextensions.db4o.ObjectContainerFactoryBean">
+<!-- <property name="userAccessLocation" value="/WEB-INF/db-credentials.properties"/> -->
+<property name="databaseFile" value="file://Users/Loka/DB4o/db4o.db"/>
+</bean>
+<bean id="db4oTransactionManager" class="org.springextensions.db4o.Db4oTransactionManager">
+<property name="objectContainer" ref="container"/>
+</bean>
+<!-- transaction proxy for db4o services/facades -->
+
+
+   </beans> 

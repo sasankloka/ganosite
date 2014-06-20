@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<!-- BLOC A -->
+	<!-- RPC Spring : Does not work!! -->
+	<!-- bean id="clientCommentsService" class="com.ppp.prm.portal.server.service.gwt.ClientCommentsServiceImpl"></bean-->
+	<!-- bean id="clientAuthentificationService" class="com.ppp.prm.portal.server.service.gwt.AuthentificationServiceImpl"></bean-->
+  
+  
+  <!-- BLOC Testing Loks -->
+  
+  
+  
+  <bean id="rainForestCommentService" class="com.ppp.prm.portal.server.service.RainCommentsServiceImpl">
+	    <property name="commentsDAO" ref="raincommentsDAO"/>
+	</bean>
+<bean id="raincommentsDAO" class="com.ppp.prm.portal.server.dao.hibernate.CommentsDAOImpl">
+<property name="sessionFactory" ref="sessionFactory"/>
+</bean>	
+	
+	
+	<!--  BLOC B-->
+	 <!-- configuration Hibernate -->
+
+	<!-- 
+	The DataSource configuration corresponds to the coordinates of your database. This is where you configure access to your database server. The bean created will provide connections to your database.
+	 -->
+	  <bean id="dataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource" destroy-method="destroy">
+			<property name="driverClassName" value="org.hsqldb.jdbcDriver" />
+			<property name="url" value="jdbc:hsqldb:hsql://localhost:9001/gwtdb" />
+			<property name="username" value="sa" />
+			<property name="password" value="" />
+			
+	</bean>
+
+<!-- 
+Once you have configured DataSource, we will configure the SessionFactory. Here we will configure Hibernate data itself.
+
+The SessionFactory is responsible for providing sessions to your application when running Hibernate orders.
+ -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+  		<property name="mappingResources">
+  			<list>
+  				
+                <value>com/mycompany/myproject/server/dao/beans/Comments.hbm.xml</value>
+           </list>
+		</property>
+ 	   
+ 	    <property name="hibernateProperties" ref="hibernateProperties" />
+	</bean>
+	
+
+	<bean id="hibernateProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="properties">
+			<props>
+
+               <!--  <prop key="hibernate.connection.url">jdbc:mysql://localhost/gwtdb</prop>
+				<prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+				<prop key="hibernate.connection.username">root</prop>
+				<prop key="hibernate.connection.password"></prop>
+	 			<prop key="hibernate.connection.pool_size">1</prop>
+	   			<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop> -->
+				
+				<prop key="hibernate.connection.url">jdbc:mysql://192.168.1.108/sample</prop>
+				<prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+				<prop key="hibernate.connection.username">root</prop>
+				<prop key="hibernate.connection.password">MyNewPass</prop>
+	 			<prop key="hibernate.connection.pool_size">1</prop>
+	   			<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+
+                <!-- prop key="hibernate.connection.url">jdbc:hsqldb:hsql://localhost:9001/gwtdb</prop>
+				<prop key="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</prop>
+				<prop key="hibernate.connection.username">root</prop>
+				<prop key="hibernate.connection.password">samysql</prop>
+	 			<prop key="hibernate.connection.pool_size">1</prop>
+
+	   			<prop key="hibernate.dialect">org.hibernate.dialect.HSQLDialect</prop>
+				<prop key="hibernate.show_sql">false</prop-->
+				<!-- prop key="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</prop-->
+				<!-- prop key="hibernate.cache.use_second_level_cache">true</prop-->
+				<!-- prop key="hibernate.cache.use_query_cache">true</prop-->
+				<!-- prop key="net.sf.ehcache.configurationResourceName">/conf/ideoptima.ehcache.xml</prop-->
+				<!-- prop key="hibernate.generate_statistics">true</prop-->
+				<!-- prop key="hibernate.cache.use_structured_entries">true</prop-->
+				<prop key="hibernate.transaction.flush_before_completion">true</prop>
+	 	    </props>
+ 	    </property>
+	</bean>
+	
+	<!-- gestionnaire de transactions 
+	The TransactionManager is the bean that will take care of all transactions to your database transparently.
+Hibernate transaction manager implemented as part thanks to Spring AOP aspect weaver can reduce the code as well.
+Spring transaction abstraction layer provider has over the Hibernate Transaction API, and persist Enables operations to Participate in global transactions.
+This will intercept any call to a method of CAD, and this will trigger a transaction before executing the method.
+org.springframework.orm.hibernate3.HibernateTransactionManager: Use this When The application Involves a single data source and Hibernate alone IS needed. This covers local Executed transactions were single SessionFactory. This IS manager Commonly Used, sincere MOST Hibernate applications work with a single database.
+	-->
+  	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+  	</bean>
+
+    
+
+<!-- BLOC C : Business -->
+
+
+ <!-- abstract service -->
+	<bean id="templateService" abstract="true">
+		<property name="daoFactory" ref="daoFactory" />
+		<property name="serviceFactory" ref="serviceFactory" />
+	</bean>
+
+	<!-- service factory -->
+	<bean id="serviceFactory" class="com.ppp.prm.portal.server.service.ServiceFactory">
+		
+        <property name="authentificationService" ref="authentificationService" />
+        <property name="commentsService" ref="commentsService" />
+	</bean>
+
+	<!-- business services declaration -->
+	
+    <bean id="commentsService" class="com.ppp.prm.portal.server.service.CommentsServiceImpl" parent="templateService" />
+    <bean id="authentificationService" class="com.ppp.prm.portal.server.service.AuthentificationServiceImpl" parent="templateService" />
+     
+
+
+
+	
+	
+	
+	<!-- DAOs -->
+	<!-- Utiliser Spring DAO
+
+To use this method requires that the DAO classes inherit from HibernateDaoSupport Spring. Beans and DAOs must have the property 'sessionFactory' -->
+	<!-- template -->
+	<bean id="daoTemplate" abstract="true">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
+	<!-- implémentations -->
+	
+	<bean id="commentsDAO" class="com.ppp.prm.portal.server.dao.hibernate.CommentsDAOImpl" parent="daoTemplate"/>
+    <bean id="authentificationDAO" class="com.ppp.prm.portal.server.dao.externe.AuthentificationDAOImpl" />
+
+
+	<!-- the DAO factory -->
+	<bean id="daoFactory" class="com.ppp.prm.portal.server.dao.DAOFactory">
+	
+        <property name="commentsDAO" ref="commentsDAO" />
+        <property name="authentificationDAO" ref="authentificationDAO" />
+
+
+	</bean>
+	
+</beans>

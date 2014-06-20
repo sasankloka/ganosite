@@ -1,0 +1,3 @@
+# Module Portal
+# RPC service class, partial path of RPC policy file
+com.ppp.prm.portal.client.service.PushService, C3F75681DD6AC12E11BB323BAC05ADC5.gwt.rpc

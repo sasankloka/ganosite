@@ -1,0 +1,2 @@
+serviceClass: com.ppp.prm.portal.client.service.PushService
+path: C3F75681DD6AC12E11BB323BAC05ADC5.gwt.rpc

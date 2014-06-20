@@ -1,0 +1,232 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+	color: Blue;
+	margin: 20px;
+	padding: 20px;
+	border: thin solid 5;
+	font-size: 2em;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: left;
+	background-color: bisque;
+	cursor: auto;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+	maximumheight:auto
+    overflow:auto;
+	margin: 1px;
+	border-top: thin hidden Blue;
+	border-right: thin ridge Blue;
+	border-bottom: thin ridge Blue;
+	border-left: thin ridge Blue;
+	vertical-align: top;
+	background-color: oldlace;
+}
+
+.serverResponseLabelError {
+	color: yellowgreen;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+.gwt-Label-Left {
+	background-color: #33cccc;
+}
+.gwt-Button-Custom {
+	margin: 3px 10px;
+	padding: 3px 10px;
+	font-variant: normal;
+	font-style: normal;
+	background-color: dodgerblue;
+	background-image: url(home.gif);
+}
+.gwt-PushButton {
+	color: Lime;
+	margin: 1px;
+	border-top: 1px hidden Blue;
+	border-right: 1px hidden mediumblue;
+	border-bottom: thick hidden Yellow;
+	border-left: 1px hidden blue;
+	font-size: 16px;
+	font-family: Tahoma;
+	text-indent: 1px;
+	text-transform: capitalize;
+	white-space: normal;
+	background-color: yellowgreen;
+	background-repeat: repeat;
+	background-image: url(home.gif);
+}
+.grid-Layout {
+ 	background-color: Aqua;
+ }
+.gwt-DockLayout {
+	margin: auto;
+	border: medium;
+	background-color: lightcyan;
+}
+gwt-Abs-West {
+	margin: auto;
+	border: medium;
+	background-color: Red;
+}
+.gwt-PushGridLeft {
+	margin: 1px;
+	background-color: darksalmon;
+}
+.gScroll {
+	background-color: Lime;
+	scroll:auto;
+}
+.gWest {
+	background-color: Lime;
+}
+.gwt-RichTextAreaGanosys {
+	font-size: 24px;
+	font-family: Trebuchet MS, fantasy;
+	font-weight: 100;
+}
+.gwt-Image-Banner {
+    width:500px;
+    height:100px;
+	border: thick hidden blue;
+	font-size: large;
+	background-color: Lime;
+}
+.gScroll-Gan {
+
+	
+}
+.gWest-Ga {
+	 opacity: 1.5;
+	overflow:scroll;
+	background: linear-gradient(white, blue);
+	
+}
+.gwt-SubMenu {
+	color: Lime;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	padding-right: 6px;
+	border: thin;
+	font-size: large;
+	vertical-align: left;
+	text-align: center;
+	background: linear-gradient(to right,white, blue);
+
+	cursor: pointer;
+	
+}
+.gwt-Abs-West {
+	 
+}
+.gwt-North {
+	padding: 2px;
+	border-top: 2px groove Blue;
+	border-right: 2px groove Blue;
+	border-bottom: 2px hidden Blue;
+	border-left: 2px groove Blue;
+	 background: white;
+	
+}
+.Split-Layout {
+	height:auto;
+	color: Black;
+	border: 2;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: left;
+	background-color: White;
+	cursor: auto;
+}
+.gwt-inLine {
+	overflow:auto;
+	max-height:auto;
+	color: Black;
+	font-size: 18pt;
+	font-family: Times New Roman;
+	vertical-align: text-top;
+	line-height: normal;
+	text-align: left;
+	background-color: lightskyblue;
+	
+}
+.gwt-south-ga {
+	border: thin double Blue;
+}
+.demo-PushButton-down-hovering {
+	color: #99ff66;
+	margin: 10px;
+	font-size: 26px;
+	font-style: normal;
+	cusor: hand;
+	background-color: Blue;
+}
+.gwt-gano-menuItem {
+	
+	text-shadow:#C17C3A 0 -1px 0;
+cursor: pointer; cursor: hand;
+	height:32px;
+	color: #fff;
+	border-radius:5px;
+	border: 0;
+	font-size: 18px;
+	font-family: 'Helvetica Neue',sans-serif;
+	line-height: 30px;
+	background-color: olive;
+	background: linear-gradient(To bottom,white, olive);
+	padding-left:10px ;
+		padding-right:10px ;
+opacity:0.9;
+}
+.gwt-gano-inLine {
+	color: Black;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	border: thin solid;
+	font-size: large;
+	vertical-align: left;
+	text-align: left;
+	background-color: White;
+	cursor: pointer;
+	background: linear-gradient(white, lightblue);
+   overflow: auto
+}
+.gwt-MenuItem-selected {
+	
+	position: relative;
+	botton: 4px;
+	top:-1px;
+}
+.gwt-MenuItemSeparator {
+width: 10px;
+}
+.gwt-Button:hover {
+ border-color: #9cf #69e #69e #7af;
+}
+.gwt-inLine-Pannel {
+height:auto;
+	color: Black;
+	border: 2;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: left;
+	background-color: White;
+	
+
+}
