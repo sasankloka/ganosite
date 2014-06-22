@@ -1,1 +1,1 @@
-mvn -X install
+mvn -X install-file
