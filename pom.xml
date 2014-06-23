@@ -145,7 +145,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
  <groupId>org.springextensions.db4o</groupId>
     <artifactId>org.springextensions.db4o</artifactId>
     <version>1.0.0e</version>
-     <scope>provided</scope>
+     <scope>runtime</scope>
 </dependency>
 <dependency>
   <groupId>javax.validation</groupId>
