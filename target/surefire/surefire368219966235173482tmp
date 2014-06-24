@@ -1,0 +1,7 @@
+#surefire
+#Sat Jun 21 12:55:58 EDT 2014
+tomcat.username=tomcat
+user.dir=/Users/Loka/Documents/workspace/Website
+tomcat.password=tomcat
+localRepository=/Users/Loka/.m2/repository
+basedir=/Users/Loka/Documents/workspace/Website
