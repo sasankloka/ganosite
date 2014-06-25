@@ -1,4 +1,2 @@
-
-mvn -X install:install-file -Dfile=${basedir}/src/main/resources/org.springextensions.db4o-1.0.0e.jar -DgroupId=org.springextensions.db4o -DartifactId=org.springextensions.db4o -Dversion=1.0.0e -Dpackaging=jar 
-
-mvn - X install:install-file -Dfile=${basedir}/src/main/resources/db4o-7.12.243.16079-all-java5.jar -DgroupId=com.db4o -DartifactId=db4o-full-java5 -Dversion=7.12-SNAPSHOT -Dpackaging=jar 
+cd ../..
+mvn install
