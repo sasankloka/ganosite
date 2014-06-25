@@ -1,2 +1,4 @@
-cd ../..
+echo pwd
+#cd ../..
+echo pwd
 mvn install
