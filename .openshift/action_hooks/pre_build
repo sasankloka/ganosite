@@ -1,5 +1,6 @@
+currdir=$(pwd)
+pom=$currdir/app-root/runtime/repo/pom.xml
+echo ++++++
+echo $pom
 pwd
-cd app-root/runtime/repo
-ls
-pwd
-mvn install -DpomFile app-root/runtime/repo/pom.xml
+mvn install -DpomFile $pom
