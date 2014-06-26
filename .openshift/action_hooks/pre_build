@@ -4,6 +4,7 @@ pom=$currdir/app-root/runtime/repo
 echo ++++++
 #cd app-root/runtime/repo
 cd $pom
+pwd
 mvn install
 #pom=/Users/Loka/Documents/workspace/Website/pom.xml
 echo $pom
