@@ -6,7 +6,7 @@ echo ++++++
 cd $pom
 pwd
 ls
-mvn install
+mvn validate
 #pom=/Users/Loka/Documents/workspace/Website/pom.xml
 echo $pom
 pwd
