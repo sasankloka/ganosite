@@ -2,4 +2,4 @@ pwd
 cd app-root/runtime/repo
 ls
 pwd
-mvn install -DpomFile ../../pom.xml
+mvn install -DpomFile app-root/runtime/repo/pom.xml
