@@ -3,4 +3,5 @@ pom=$currdir/app-root/runtime/repo/pom.xml
 echo ++++++
 echo $pom
 pwd
+echo mvn install -DpomFile $pom
 mvn install -DpomFile $pom
