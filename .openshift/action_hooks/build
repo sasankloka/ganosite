@@ -1,0 +1,5 @@
+set -v
+currdir=$(pwd)
+pom=$currdir/app-root/runtime/repo
+echo build
+mvn package tomcat:deploy 
