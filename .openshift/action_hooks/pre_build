@@ -10,4 +10,4 @@ mvn validate
 #pom=/Users/Loka/Documents/workspace/Website/pom.xml
 echo $pom
 pwd
-echo mvn install -DpomFile "$pom"
+mvn gwt:compile
