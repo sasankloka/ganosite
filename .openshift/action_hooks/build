@@ -1,4 +1,5 @@
 set -v
+echo build
 currdir=$(pwd)
 pom=$currdir/app-root/runtime/repo
 echo build
