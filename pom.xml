@@ -218,13 +218,14 @@ http://maven.apache.org/maven-v4_0_0.xsd">
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
         <version>2.6.1</version>
+        <configuration>
+         <extraJvmArgs>-Xmx512M -Xss1024k -Dgwt.jjs.permutationWorkerFactory=com.google.gwt.dev.ThreadedPermutationWorkerFactory</extraJvmArgs>            
+        </configuration>
         <executions>
           <execution>
             <configuration>
              <logLevel>DEBUG</logLevel>
-              <extraJvmArgs>-Xmx512M -Xss1024k</extraJvmArgs>
-             
-            </configuration>
+             </configuration>
             <goals>
               <goal>compile</goal>
             </goals>
